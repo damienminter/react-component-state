@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+Taking a look into the differnt ways to manage state across FUNCTIONAL componets using React HOOKS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have split the differnt ways into branches
 
-## Available Scripts
+BRANCHES
+1. Basic Prop Drilling (Lifting state up with props)
+2. Spread Prop Drilling (Lifting up state while using the spread operator to drill through props {...props})
+3. Spread & Rest Prop Drilling (Using spread and rest operator to perform an additional state update midway thorugh the component tree)
+4. Composition with React Children (Refactoring the code to use compositon and Reacts children prop to avoid passing state through components
+5. useContext Hook (Refactoring the code to use the context hook to avoid prop drilling and sharing state across components)
 
-In the project directory, you can run:
+Master (ignore - init only)
 
-### `npm start`
+ARTICLES & VIDEOS USED
+Using Composition in React to Avoid "Prop Drilling" - Michael Jackson
+https://www.youtube.com/watch?v=3XaXKiXtNjw
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Application State Management with React - Kent C Dodds
+https://kentcdodds.com/blog/application-state-management-with-react
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+React Pass Props To Component - Robin Wieruch
+https://www.robinwieruch.de/react-pass-props-to-component
 
-### `npm test`
+How to update React Context from inside a child component? - Stack Overflow
+https://stackoverflow.com/questions/41030361/how-to-update-react-context-from-inside-a-child-component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Context - React Docs
+https://via.hypothes.is/https://reactjs.org/docs/context.html
