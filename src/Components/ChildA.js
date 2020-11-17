@@ -1,7 +1,7 @@
 import React from "react";
 import GrandchildA from "./GrandchildA";
 
-export default function ChildA({ children }) {
+export default function ChildA() {
   const [change, setChange] = React.useState("");
 
   function handleChange(e) {
@@ -15,7 +15,6 @@ export default function ChildA({ children }) {
         <p>{change}</p>
       </div>
       <GrandchildA change={change} handleChange={handleChange} />
-      {children}
     </div>
   );
 }

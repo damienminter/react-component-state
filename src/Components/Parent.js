@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import ChildA from "./ChildA";
-import GreatGrandchildA from "./GreatGrandchildA";
+
+// Create React Context
+export const Context = React.createContext();
 
 export default function Parent() {
-  const [state, setState] = useState("");
+  const [state, setState] = useState("GoodBye");
+  const value = { state, setState };
 
   function handleClick() {
     setState("State Updated");
@@ -11,16 +14,15 @@ export default function Parent() {
   }
 
   return (
-    <div>
+    <Context.Provider value={value}>
       <div className="container">
         <h1>This is a parent</h1>
         <h1>Parent state {state}</h1>
+        <button type="click" onClick={handleClick}>
+          Update State
+        </button>
       </div>
-      <ChildA>
-        {/* // Here we are wrapping GreatGrandchild component in child component and
-        passing props directly - by passing Granchild component*/}
-        <GreatGrandchildA state={state} handleClick={handleClick} />
-      </ChildA>
-    </div>
+      <ChildA />
+    </Context.Provider>
   );
 }
