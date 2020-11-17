@@ -1,7 +1,7 @@
 import React from "react";
 import GrandchildA from "./GrandchildA";
 
-export default function ChildA(props) {
+export default function ChildA({ children }) {
   const [change, setChange] = React.useState("");
 
   function handleChange(e) {
@@ -14,8 +14,8 @@ export default function ChildA(props) {
         <h1>This is a Child</h1>
         <p>{change}</p>
       </div>
-      {/* // Use spread operator to add change and handleChange to props */}
-      <GrandchildA {...{ change, handleChange, ...props }} />
+      <GrandchildA change={change} handleChange={handleChange} />
+      {children}
     </div>
   );
 }

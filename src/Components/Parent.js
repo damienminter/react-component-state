@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ChildA from "./ChildA";
+import GreatGrandchildA from "./GreatGrandchildA";
 
 export default function Parent() {
   const [state, setState] = useState("");
@@ -15,7 +16,11 @@ export default function Parent() {
         <h1>This is a parent</h1>
         <h1>Parent state {state}</h1>
       </div>
-      <ChildA state={state} handleClick={handleClick} />
+      <ChildA>
+        {/* // Here we are wrapping GreatGrandchild component in child component and
+        passing props directly - by passing Granchild component*/}
+        <GreatGrandchildA state={state} handleClick={handleClick} />
+      </ChildA>
     </div>
   );
 }
