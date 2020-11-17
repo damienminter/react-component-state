@@ -7,7 +7,7 @@ export default function ChildA(props) {
       <div className="container">
         <h1>This is a Child</h1>
       </div>
-      <GrandchildA state={props.state} handleClick={props.handleClick} />
+      <GrandchildA {...props} />
     </div>
   );
 }
