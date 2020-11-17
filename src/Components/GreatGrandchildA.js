@@ -6,8 +6,8 @@ export default function GreatGrandchildA(props) {
     <div>
       <div className="container">
         <h1>This is great GreatGrandchild A</h1>
-        <h1>GreatGrandchild state {state}</h1>
-        <button type="click" onClick={handleClick}>
+        <h1>GreatGrandchild state = {state}</h1>
+        <button type="click" onClick={() => handleClick("GreatGrandchild")}>
           Update State
         </button>
       </div>
