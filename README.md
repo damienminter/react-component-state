@@ -1,4 +1,4 @@
-Taking a look into the differnt ways to manage state across FUNCTIONAL componets using React HOOKS
+Taking a look into the differnt ways to manage state across FUNCTIONAL components using React HOOKS
 
 I have split the differnt ways into branches
 
